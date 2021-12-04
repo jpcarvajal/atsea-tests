@@ -1,0 +1,28 @@
+{
+  "name": "atsea-tests",
+  "version": "1.0.0",
+  "description": "Tests for final praxis homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpcarvajal/atsea-tests.git"
+  },
+  "keywords": [
+    "api-testing",
+    "ui-testing"
+  ],
+  "author": "Juan Pablo <jpcarvajalga@unal.edu.co> (jpcarvajal)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpcarvajal/atsea-tests/issues"
+  },
+  "homepage": "https://github.com/jpcarvajal/atsea-tests#readme",
+  "dependencies": {
+    "typescript": "^4.5.2"
+  }
+}
