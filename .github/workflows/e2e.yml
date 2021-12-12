@@ -1,7 +1,7 @@
 on:
   schedule:
   - cron : 0 0 * * *
-	repository_dispatch:
+	  repository_dispatch:
     types: [deployed]
   workflow_dispatch:
 jobs:
@@ -63,7 +63,5 @@ jobs:
     - name: Running UI tests
       run: npm run test:ui
     - name: Upload reports to AWS bucket
-      run: aws s3 sync ./mochawesome-reports ${{ secrets.AWS_BUCKET }}/ui-tests-report
-      if: ${{ always() }}      
-      
+      run: aws s3 sync ./mochawesome-reports ${{ secrets.AWS_BUCKET }}/ui-tests-report 
       if: ${{ always() }}
