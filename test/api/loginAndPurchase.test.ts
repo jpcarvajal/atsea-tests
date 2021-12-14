@@ -78,11 +78,11 @@ describe('Create a customer, login, make a purchase and finally delete it', () =
     });
 
     it("Attempt to purchase without logging in", async () => {
-      await agent3.delete(`${urlBase3}/api/customer/${id}`)
+      await agent3.get(`${urlBase3}/purchase/`)
         .set('User-Agent', 'agent')
         .catch(error => {
           //500 = Internal server error
-          chai2.expect(error.status).to.equal(404);
+          chai2.expect(error.status).to.equal(500);
       });   
   });
 });
