@@ -1,6 +1,6 @@
 let agent4 = require('superagent');
 //let statusCode2 = require('http-status-codes');
-let urlBase4 = 'http://localhost:8080/';
+let urlBase4 = '3.145.12.111:8080/';
 const chai3 = require('chai').use(require('chai-json-schema')); //npm install chai-json-schema
 const utilitiesSchema = require('../../src/utilitiesSchema.schema.ts');
 

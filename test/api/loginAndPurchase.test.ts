@@ -1,6 +1,6 @@
 let agent3 = require('superagent');
 //let statusCode2 = require('http-status-codes');
-let urlBase3 = 'http://localhost:8080/';
+let urlBase3 = '3.145.12.111:8080/';
 const chai2 = require('chai')
 
 describe('Create a customer, login, make a purchase and finally delete it', () => {

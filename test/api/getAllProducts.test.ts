@@ -1,7 +1,7 @@
 let agent = require('superagent');
 let statusCode = require('http-status-codes');
 const chai = require('chai');
-const urlBase = 'http://localhost:8080/';
+const urlBase = '3.145.12.111:8080/';
 
 describe('Get all products', async () => {
   it('Get all products', async () => {
